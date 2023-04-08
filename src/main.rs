@@ -71,7 +71,7 @@ async fn post_inference_handler(req: Json<InferenceRequest<'_>>, model: &State<M
 #[launch]
 fn rocket() -> _ {
     // let model_path = "/Users/gill/Documents/rust-learning/serve_model/model_load/src/models/mobile_net_v2.pt";
-    let model_path = "/app/artifacts/resnet18.pt";
+    let model_path = "/app/artifacts/mobile_net_v2.pt";
 
     let model = Model::new(model_path);
 
